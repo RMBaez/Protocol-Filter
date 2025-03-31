@@ -6,7 +6,7 @@ Answering questions using the Statistics drop menu
 
 <h2>Questions</h2>
 
-- <b>IWhat is the number of IP packets?</b>
+- <b>What is the number of IP packets?</b>
 - <b>What is the number of packets with a "TTL value less than 10"?</b>
 - <b>What is the number of packets which uses "TCP port 4444"?</b>
 - <b>What is the number of "HTTP GET" requests sent to port "80"?</b>
@@ -26,22 +26,17 @@ Answering questions using the Statistics drop menu
 
 <b>Answer the question below <br/>
 
-Question 1: Investigate the resolved addresses. What is the IP address of the hostname starts with "bbc"?
+What is the number of IP packets?
 
 <p align="center">
-At the top of the Wireshark window, click on Statistics from the menu bar. In the drop-down, click on Resolved Addresses.: <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 1 59 05 PM" src="https://github.com/user-attachments/assets/a80aef1c-2a04-4410-a472-6703ce2a9226" />
+Starting at the Filter Bar, type in ip and press enter. It will filter pretty quickly. Look at the bottom right of the Wireshark window. You are looking for the word Displayed. The numbers to the right of Displayed, is the answer: <br/>
+<img width="1440" alt="Screenshot 2025-03-31 at 3 16 51 PM" src="https://github.com/user-attachments/assets/f749e22d-53bd-4229-8d78-56fa9f2958f4" />
 
-
-<br />
-<br />
-Resolved Addresses window will pop-up. At the top of this window is a search field labeled Search for entry. Type bbc into this search field.:  <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 03 38 PM" src="https://github.com/user-attachments/assets/64c65c1a-ed79-44e1-b640-921ff43b0102" />
 
 
 <br />
 <br />
-Answer is 199.232.24.81: <br/>
+Answer is 81420: <br/>
 
 
 
@@ -50,10 +45,10 @@ Answer is 199.232.24.81: <br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-What is the number of IPv4 conversations?
+What is the number of packets with a "TTL value less than 10"?
 
 <p align="center">
-Go to the Menu bar and click Statistics. Click on the Conversations option from the drop-down menu: <br/>
+Go to the Filter Bar. The filter will be ip.ttl <10, and will look for IPv4 address that have a time to live of less than 10. After you have entered in this filter, press enter to use it. You should only have the Packets that match the filter remaining. Go back down to Displayed in the bottom right of the Wireshark window. The number to the right is the answer to this question: <br/>
 <img width="1440" alt="Screenshot 2025-03-31 at 2 13 54 PM" src="https://github.com/user-attachments/assets/400d3db0-5bf5-47e8-a5ac-2f65929ad900" />
 
 
