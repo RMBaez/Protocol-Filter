@@ -2,7 +2,7 @@
 
 
 <h2>Description</h2>
-Answering questions using the Statistics drop menu
+Answering questions using filters
 
 <h2>Questions</h2>
 
