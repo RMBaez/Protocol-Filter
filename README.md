@@ -49,20 +49,13 @@ What is the number of packets with a "TTL value less than 10"?
 
 <p align="center">
 Go to the Filter Bar. The filter will be ip.ttl <10, and will look for IPv4 address that have a time to live of less than 10. After you have entered in this filter, press enter to use it. You should only have the Packets that match the filter remaining. Go back down to Displayed in the bottom right of the Wireshark window. The number to the right is the answer to this question: <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 13 54 PM" src="https://github.com/user-attachments/assets/400d3db0-5bf5-47e8-a5ac-2f65929ad900" />
+<img width="1440" alt="Screenshot 2025-03-31 at 3 32 36 PM" src="https://github.com/user-attachments/assets/5ee20152-d37b-41a6-846a-16302901db40" />
 
 
 
 <br />
 <br />
-The Conversations window will pop-up. You can see the different tabs at the top of this window. The tab that pertains to this question is the IPv4 tab. Look at the number on this tab, this is the answer to this question:  <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 16 01 PM" src="https://github.com/user-attachments/assets/3c4be1d0-663f-4d14-8779-cf4834af5f10" />
-
-
-
-<br />
-<br />
-Answer is 435: <br/>
+Answer is 66: <br/>
 
 
 
