@@ -60,36 +60,23 @@ Answer is 66: <br/>
 
 
 
+
+
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-How many bytes (k) were transferred from the "Micro-St" MAC address?
+What is the number of packets which uses "TCP port 4444"?
 
 
 <p align="center">
-Go to the menu bar and click Statistics. On the drop-down menu click Endpoints: <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 20 20 PM" src="https://github.com/user-attachments/assets/521ffbf1-7848-4c1d-a521-da1d84327198" />
-
-
-
-
-<br />
-<br />
-The Endpoints window will pop-up. Look at the bottom left of the window. Click the checkbox next to Name Resolution:  <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 22 04 PM" src="https://github.com/user-attachments/assets/5710b409-c70d-433f-b3c9-169f7c361d2d" />
-
+Go to the Filter Bar. The filter to use is tcp.port == 4444. Type this into the Filter Bar and press enter. Go to Displayed in the bottom right of the Wireshark window. The number to the right is the answer to this question.: <br/>
+<img width="1440" alt="Screenshot 2025-03-31 at 3 39 31 PM" src="https://github.com/user-attachments/assets/6f673522-f184-4cb6-9400-10fba98e36b4" />
 
 
 
 <br />
 <br />
-After checking the Name Resolution checkbox, the MAC address will now display the resolved Name. Looking down through the list, you need to find the name Micro-St. Once you find it look across the row till you get to the Bytes column, displaying the amount of Bytes that were transferred from that Name/MAC Address: <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 23 22 PM" src="https://github.com/user-attachments/assets/0219dbc9-9043-476d-a6a0-ecdd1bf7da3d" />
-
-<br />
-<br />
-Answer is 7474: <br/>
-
+Answer is 632: <br/>
 
 
 
@@ -98,29 +85,19 @@ Answer is 7474: <br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-What is the number of IP addresses linked with "Kansas City"?
+What is the number of "HTTP GET" requests sent to port "80"?
 
 <p align="center">
-Go to the Endpoints window. Click on the labeled IPv4: <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 29 51 PM" src="https://github.com/user-attachments/assets/1da54492-f57a-49e5-8ca4-9fd69e9242b2" />
+Go to the Filter Bar. Enter the filter, http.request.method == GET and tcp.port == 80 and press enter. Go back down to Displayed in the bottom right of the Wireshark window. The number to the right is the answer to this question: <br/>
+<img width="1440" alt="Screenshot 2025-03-31 at 3 47 33 PM" src="https://github.com/user-attachments/assets/298a83ad-c7e4-4ba9-b588-6d48b593aba9" />
 
 
 
 <br />
 <br />
-You will now be presented with the IPv4 Endpoints from the pcapng file in the table format. Look for the column labeled City, and click on it to alphabitize them:  <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 31 23 PM" src="https://github.com/user-attachments/assets/c1ecf09e-7b05-4aa0-be64-c5e3a6095f82" />
+Answer is 527: <br/>
 
 
-<br />
-<br />
-Scroll down till you find Kansas City. Once you have found it, count the number of times it appears and you will have your answer.
-<img width="1440" alt="Screenshot 2025-03-31 at 2 33 33 PM" src="https://github.com/user-attachments/assets/aab49713-897a-402f-b344-ab17b81982e3" />
-
-
-<br />
-<br />
-Answer is 4: <br/>
 
 
 
@@ -128,33 +105,17 @@ Answer is 4: <br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-Which IP address is linked with "Blicnet" AS Organisation?
+What is the number of "type A DNS Queries"?
 
 
 <p align="center">
-Go to the Endpoints window. You are going to want to scroll to the right until you see the column As Organization. When you find the column As Organization, click on it to alphabatize it. Scroll until you see Blicnet in the As Organization column. When you find it, click on the row to highlight it. Then scroll to the left till you see the Address column: <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 38 42 PM" src="https://github.com/user-attachments/assets/f003c1ec-bf3c-4f2c-98a9-3ed2c657bebc" />
-
-
-
-
-
-<br />
-<br />
-The Endpoints window will pop-up. Look at the bottom left of the window. Click the checkbox next to Name Resolution:  <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 22 04 PM" src="https://github.com/user-attachments/assets/5710b409-c70d-433f-b3c9-169f7c361d2d" />
-
+Start typing in the Filter Bar, dns.a. Press enter to use the filter. Go to Displayed in the bottom right of the Wireshark window. The number to the right is the answer to this question: <br/>
+<img width="1440" alt="Screenshot 2025-03-31 at 3 54 08 PM" src="https://github.com/user-attachments/assets/94b8240f-f059-4d93-a3ad-08d607983b18" />
 
 
 
 <br />
 <br />
-Once you reach the Address column, you will see the IPv4 address associated with Blicnet and thus the answer: <br/>
-<img width="1440" alt="Screenshot 2025-03-31 at 2 48 41 PM" src="https://github.com/user-attachments/assets/026f3975-e573-47fd-8641-38b20323e64b" />
-
-
-<br />
-<br />
-Answer is 188.246.82.7: <br/>
+Answer is 51: <br/>
 
 
